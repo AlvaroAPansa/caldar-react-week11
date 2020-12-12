@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
+import SearchInput from './SearchInput';
+import ListHeader from './ListHeader';
 
 class MainBox extends Component {
   render () {
     return (
       <div style={boxStyle}>
-        <p>Text inside the box</p>
+        <SearchInput />
+        <ListHeader />
       </div>
     );
   }
 }
 
 const boxStyle = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  alignItems: 'flex-start',
+  alignContent: 'flex-start',
   margin: 'auto',
   padding: '120px 0px 0px 0px',
   width: '90%',
