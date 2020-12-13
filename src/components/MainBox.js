@@ -23,7 +23,7 @@ const boxStyle = {
   margin: 'auto',
   padding: '60px 0px 0px 0px',
   width: '90%',
-  height: '450px',
+  height: '500px',
   boxShadow: '7px 7px 5px grey'
 }
 

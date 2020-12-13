@@ -14,12 +14,13 @@ const addButtonStyle = {
   float: 'right',
   width: '70px',
   height: '70px',
-  margin: '30px 40px 0px 0px',
+  margin: '17px 40px 0px 0px',
   fontSize: '50px',
   color: 'white',
   backgroundColor: '#FF7F00',
   borderStyle: 'none',
-  borderRadius: '50%'
+  borderRadius: '50%',
+  cursor: 'pointer'
 }
 
 export default AddButton;
