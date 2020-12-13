@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SearchInput from './SearchInput';
 import ListHeader from './ListHeader';
-import ListItem from './ListItem';
+import ItemsList from './ItemsList';
 
 class MainBox extends Component {
   render () {
@@ -9,7 +9,7 @@ class MainBox extends Component {
       <div style={boxStyle}>
         <SearchInput />
         <ListHeader />
-        <ListItem customers={this.props.customers} />
+        <ItemsList customers={this.props.customers} />
       </div>
     );
   }

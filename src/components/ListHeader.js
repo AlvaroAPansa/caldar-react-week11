@@ -21,7 +21,9 @@ const listHeaderStyle = {
   flexBasis: '100%',
   flexWrap: 'nowrap',
   padding: '20px 20px 0px 20px',
-  borderBottom: '2px solid grey'
+  borderBottom: '2px solid grey',
+  color: 'orange',
+  fontWeight: 'bold'
 }
 
 const idStyle = {

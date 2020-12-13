@@ -2,15 +2,27 @@ import React, { Component } from 'react';
 
 class ListItem extends Component {
   render () {
-    console.log(this.props);
+    const customer = this.props.customer;
     return (
       <div style={listItemStyle}>
-        <p style={idStyle}>ID</p>
-        <p style={nameStyle}>Business Name</p>
-        <p style={nameStyle}>Email</p>
-        <p style={nameStyle}>Phone</p>
-        <p style={nameStyle}>Contact</p>
-        <p style={nameStyle}>Fiscal Address</p>
+        <p style={idStyle}>
+          {customer.id}
+        </p>
+        <p style={nameStyle}>
+          {customer.businessName}
+        </p>
+        <p style={nameStyle}>
+          {customer.email}
+        </p>
+        <p style={nameStyle}>
+          {customer.phone}
+        </p>
+        <p style={nameStyle}>
+          {customer.contact}
+        </p>
+        <p style={nameStyle}>
+          {customer.fiscalAddress}
+        </p>
         <p style={actionsStyle}>Actions</p>
       </div>
     );
