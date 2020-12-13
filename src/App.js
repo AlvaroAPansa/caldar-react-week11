@@ -4,11 +4,21 @@ import Header from './components/layout/Header';
 import Content from './components/Content'
 
 class App extends Component {
+  state = {
+    customers: []
+  };
+
+  componentDidMount() {
+    this.setState ({
+      customers: require('./mocks/customers.json')
+    })
+  }
+  
   render() {
     return (
       <div className="App">
         <Header />
-        <Content />
+        <Content customers={this.state.customers} />
       </div>
     );
   }

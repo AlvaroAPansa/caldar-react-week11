@@ -5,7 +5,7 @@ class Content extends Component {
   render () {
     return (
       <div style={boxStyle}>
-        <MainBox />
+        <MainBox customers={this.props.customers} />
       </div>
     );
   }

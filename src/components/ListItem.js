@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-class ListHeader extends Component {
+class ListItem extends Component {
   render () {
+    console.log(this.props);
     return (
-      <div style={listHeaderStyle}>
+      <div style={listItemStyle}>
         <p style={idStyle}>ID</p>
         <p style={nameStyle}>Business Name</p>
         <p style={nameStyle}>Email</p>
@@ -16,11 +17,11 @@ class ListHeader extends Component {
   }
 }
 
-const listHeaderStyle = {
+const listItemStyle = {
   display: 'flex',
   flexBasis: '100%',
   flexWrap: 'nowrap',
-  padding: '20px 20px 0px 20px',
+  padding: '2px 20px 0px 20px',
   borderBottom: '2px solid grey'
 }
 
@@ -36,4 +37,4 @@ const actionsStyle = {
   flexBasis: '10%'
 }
 
-export default ListHeader;
+export default ListItem;
