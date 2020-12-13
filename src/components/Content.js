@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddButton from './AddButton';
 import MainBox from './MainBox';
 
 class Content extends Component {
@@ -6,6 +7,7 @@ class Content extends Component {
     return (
       <div style={boxStyle}>
         <MainBox customers={this.props.customers} />
+        <AddButton />
       </div>
     );
   }

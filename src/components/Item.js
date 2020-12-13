@@ -23,7 +23,14 @@ class ListItem extends Component {
         <p style={nameStyle}>
           {customer.fiscalAddress}
         </p>
-        <p style={actionsStyle}>Actions</p>
+        <div style={actionsStyle}>
+          <i className='material-icons'>
+            create
+          </i>
+          <i className='material-icons'>
+            delete
+          </i>
+        </div>
       </div>
     );
   }

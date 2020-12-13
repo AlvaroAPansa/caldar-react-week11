@@ -21,9 +21,9 @@ const boxStyle = {
   alignItems: 'flex-start',
   alignContent: 'flex-start',
   margin: 'auto',
-  padding: '120px 0px 0px 0px',
+  padding: '60px 0px 0px 0px',
   width: '90%',
-  height: '500px',
+  height: '450px',
   boxShadow: '7px 7px 5px grey'
 }
 
