@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class AddButton extends Component {
   render () {
     return (
-      <button type='button' style={addButtonStyle}>
-        +
-      </button>
+      <Link to='/addCustomer'>
+        <button type='button' style={addButtonStyle}>
+          +
+        </button>
+      </Link>
     );
   }
 }

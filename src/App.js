@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/layout/Header';
-import Content from './components/Content'
+import Content from './components/items-list/Content';
+import AddCustomerForm from './components/forms/AddCustomerForm';
 
 class App extends Component {
   state = {
@@ -16,10 +18,17 @@ class App extends Component {
   
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Content customers={this.state.customers} />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path='/'>
+            <Content customers={this.state.customers} />
+          </Route>
+          <Route path='/addCustomer'>
+            <AddCustomerForm />
+          </Route>
+        </div>
+      </Router>
     );
   }
 }
