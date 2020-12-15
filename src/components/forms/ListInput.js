@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 
-class FormInput extends Component {
+class ListInput extends Component {
 
   render () {
-    const { name, type } = this.props;
+    const { name } = this.props;
     return (
       <div style={inputStyle}>
-        <label htmlFor={name}>
+        <label htmlFor={name} style={inputComponentsStyle}>
           {name} <br />
-          <input type={type} id={name} name={name} style={inputComponentsStyle} />
+          <input list='types' id={name} name={name} />
         </label>
+        <datalist id='types'>
+          <option value='Particular' />
+          <option value='Construciton Company' />
+        </datalist>
       </div>
     );
   }
@@ -27,4 +31,4 @@ const inputComponentsStyle = {
   width: '100%'
 }
 
-export default FormInput;
+export default ListInput;
