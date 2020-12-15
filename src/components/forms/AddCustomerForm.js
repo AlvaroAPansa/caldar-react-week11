@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import BuildingButton from './BuildingButton';
+import ConfirmButton from './ConfirmButton';
 import FormHeader from './FormHeader';
 import FormInput from './FormInput';
 import ListInput from './ListInput';
 
 class AddCustomerForm extends Component {
   state = {
-    id: ''
+    id: '',
+    contact: '',
+    customerType: '',
+    fiscalAddress: '',
+    email: '',
+    buildingsId: []
   };
 
   render () {
@@ -18,6 +25,9 @@ class AddCustomerForm extends Component {
         <FormInput name='Fiscal Address' type='text' />
         <FormInput name='Email' type='email' />
         <FormInput name='Buildings' type='text' />
+        <BuildingButton name='Add Building' />
+        <BuildingButton name='Edit Building' />
+        <ConfirmButton />
       </form>
     );
   }
